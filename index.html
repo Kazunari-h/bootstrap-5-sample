@@ -1,12 +1,253 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5.0 Sample</title>
-</head>
-<body>
-    <div class="container"></div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap 5.0 Sample</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </head>
+    <body class="vw-100 vh-100">
+        <div class="p-0 m-0 row w-100 h-100">
+            <!-- サイドメニュー -->
+            <aside class="px-2 py-4 text-white shadow-lg d-flex flex-column bg-dark col h-100 position-sticky">
+                <!-- サイト名 -->
+                <header class="mb-3">
+                    <h1 class="h6 fw-bold d-inline-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2 bi bi-alarm-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"
+                            />
+                        </svg>
+                        おもいうかぶ
+                    </h1>
+                </header>
+                <hr />
+                <!-- メニューの項目 -->
+                <div class="mb-auto">
+                    <!-- セクション別 -->
+                    <h2 class="small text-white-50 d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="me-2 bi bi-bank" viewBox="0 0 16 16">
+                            <path
+                                d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"
+                            />
+                        </svg>
+                        ダッシュボード
+                    </h2>
+                    <nav class="mb-4 nav flex-column small">
+                        <!-- メニュー1 -->
+                        <a class="text-white nav-link" data-bs-target="#dashboard-collapse-1, .dashboard-collapse.show" data-bs-toggle="collapse">メニュー1</a>
+                        <!-- サブメニュー -->
+                        <div class="ps-2 collapse dashboard-collapse" id="dashboard-collapse-1">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="text-white nav-link" data-bs-target="#dashboard-collapse-2, .dashboard-collapse.show" data-bs-toggle="collapse">メニュー2</a>
+                        <!-- サブメニュー -->
+                        <div class="ps-2 collapse dashboard-collapse" id="dashboard-collapse-2">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="text-white nav-link" data-bs-target="#dashboard-collapse-3, .dashboard-collapse.show" data-bs-toggle="collapse">メニュー3</a>
+                        <!-- サブメニュー -->
+                        <div class="ps-2 collapse dashboard-collapse" id="dashboard-collapse-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <h2 class="small text-white-50 d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2 bi bi-headset" viewBox="0 0 16 16">
+                            <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z" />
+                        </svg>
+                        設定
+                    </h2>
+                    <nav class="mb-4 nav flex-column small">
+                        <!-- メニュー1 -->
+                        <a class="text-white nav-link d-flex justify-content-between" data-bs-target="#menu-collapse-1, .setting-collapse.show" data-bs-toggle="collapse">
+                            メニュー1
+                            <span>
+                                <span class="mx-2 text-white badge rounded-pill bg-danger">99</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="ps-2 collapse setting-collapse" id="menu-collapse-1">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- サブメニュー -->
+                        <a class="text-white nav-link d-flex justify-content-between" data-bs-target="#menu-collapse-2, .setting-collapse.show" data-bs-toggle="collapse">
+                            メニュー2
+                            <span>
+                                <span class="mx-2 text-white badge rounded-pill bg-danger">99</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="ps-2 collapse setting-collapse" id="menu-collapse-2">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a class="text-white nav-link d-flex justify-content-between" data-bs-target="#menu-collapse-3, .setting-collapse.show" data-bs-toggle="collapse">
+                            メニュー3
+                            <span>
+                                <span class="mx-2 text-white badge rounded-pill bg-danger">1</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="ps-2 collapse setting-collapse" id="menu-collapse-3">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="text-white nav-link d-flex justify-content-between" href="#"> Link </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <hr />
+                <div class="dropdown">
+                    <a href="#" class="text-white text-decoration-none dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown" id="dropdownUserButton" aria-expanded="false">
+                        <img src="https://github.com/juraworks.png" alt="" width="32" height="32" class="bg-white rounded-circle me-2" />
+                        <span class="fw-bold">Kazunari</span>
+                    </a>
+                    <ul class="px-2 py-3 my-2 shadow dropdown-menu small" aria-labelledby="dropdownUserButton">
+                        <li><a class="dropdown-item" href="#">ユーザー設定</a></li>
+                        <li><a class="dropdown-item" href="#">料金</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item text-danger" href="#">アカウントを削除する</a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="dropdown">
+                    <a href="#" class="text-white d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/kazunari-h.png" alt="" width="32" height="32" class="rounded-circle me-2" />
+                        <strong>Kazunari</strong>
+                    </a>
+                    <ul class="p-3 shadow dropdown-menu dropdown-menu-dark text-small" aria-labelledby="dropdownUser1">
+                        <li>
+                            <a class="dropdown-item" href="#">New project...</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div> -->
+            </aside>
+            <!-- メインエリア -->
+            <main class="col-10 h-100 bg-light bg-gradient">
+                <div class="my-4 row row-cols-2">
+                    <div class="col">
+                        <div class="shadow card">
+                            <div class="card-body">
+                                <h1 class="h5">タイトル</h1>
+                                <p>なんかの説明が入る</p>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="shadow card">
+                            <div class="card-body">
+                                <h1 class="h5">タイトル</h1>
+                                <p>なんかの説明が入る</p>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4 col-12">
+                        <div class="shadow card">
+                            <div class="card-body">
+                                <h1 class="h5">タイトル</h1>
+                                <p>なんかの説明が入る</p>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="my-2 progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
